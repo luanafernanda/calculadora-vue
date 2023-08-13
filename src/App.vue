@@ -1,29 +1,32 @@
-import Calculadora from './components/Calculadora.vue'
-
 <template>
   <div id="app">
     <Calculadora />
   </div>
 </template>
 
-<script>
 
-export default {
-  components: {
-    Calculadora
+<script>
+  import Calculadora from './components/Calculadora.vue'
+  export default {
+    components: {
+      Calculadora
+    }
   }
-}
 </script>
 
 <style>
+
+
+
   body {
     background-color: #D1C4E9;
+    overflow-y: hidden;
   }
 
   #app {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
   }
 </style>

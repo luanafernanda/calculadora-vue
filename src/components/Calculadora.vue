@@ -75,16 +75,18 @@
         padding: 20px;
         border: 1px solid black;
         border-radius: 10px;
-        width: 300px; 
+        width: 100%;
+        max-width: 300px; 
        
     }
 
     input, select {
+        box-sizing: border-box;
         width: 100%;
         padding: 10px;
         border: 1px solid black;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     select {
@@ -96,4 +98,24 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    @media (max-width: 390px) {
+    .calculadora {
+        gap: 8px; 
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+
+    input, select {
+        padding: 5px; 
+        font-size: 14px; 
+    }
+
+    select {
+        width: 70%;
+    } 
+}
 </style>
